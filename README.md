@@ -18,18 +18,7 @@ KemikAI, bir çocuğun el röntgeni görüntüsünü ve klinik bilgilerini alara
 - 🔬 **GradCAM ısı haritası üretir** (modelin hangi bölgeye odaklandığını gösterir)
 - 📋 **Klinik rapor oluşturur** (tüm bilgiler tek ekranda)
 
----
 
-## 🧠 Model Mimarisi
-Görüntü Dalı: El Röntgeni (224x224x3) → EfficientNetV2S → GlobalAvgPool → Dense(256)
-↓
-Concatenate
-↑
-Tabular Dal:  8 Klinik Özellik → Dense(64) → Dense(32) ————————————————————————————
-↓
-Dense(128) → Dense(1) → Kemik Yaşı (ay)
-
-**8 Klinik Özellik:** Cinsiyet · Boy · Kilo · Anne Boyu · Baba Boyu · D Vitamini · Kalsiyum · Kırık Geçmişi
 
 ---
 
