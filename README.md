@@ -33,14 +33,15 @@ Dense(128) → Dense(1) → Kemik Yaşı (ay)
 
 ---
 
-## 📊 Performans
+## 🧠 Model Mimarisi
 
-| Model | Val MAE | Val MAE (yıl) |
-|-------|---------|---------------|
-| Tek Girdili (sadece görüntü) | 8.28 ay | 0.69 yıl |
-| **KemikAI Multimodal** | **5.59 ay** | **0.47 yıl** |
+| Dal | Katmanlar |
+|-----|-----------|
+| **Görüntü Dalı** | El Röntgeni (224×224×3) → EfficientNetV2S → GlobalAvgPool2D → Dense(256) → Dropout(0.3) |
+| **Tabular Dal** | 8 Klinik Özellik → Dense(64) → Dense(32) |
+| **Füzyon** | Concatenate → Dense(128) → Dropout(0.3) → Dense(1) → Kemik Yaşı (ay) |
 
-> Multimodal model, tek girdili modele kıyasla **%32.5 daha iyi** performans sergiledi.
+**8 Klinik Özellik:** Cinsiyet · Boy · Kilo · Anne Boyu · Baba Boyu · D Vitamini · Kalsiyum · Kırık Geçmişi
 
 ---
 
