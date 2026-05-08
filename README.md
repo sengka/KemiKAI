@@ -45,21 +45,20 @@ Dense(128) → Dense(1) → Kemik Yaşı (ay)
 ---
 
 ## 📁 Proje Yapısı
-KemiKAI/
-├── notebooks/
-│   ├── 01_setup.ipynb                # Ortam kurulumu, Kaggle API, Drive bağlantısı
-│   ├── 02_eda.ipynb                  # Veri keşfi, dağılım grafikleri
-│   ├── 03_preprocessing.ipynb       # Görüntü işleme, sentetik klinik veri üretimi
-│   ├── 04_model.ipynb                # İlk model denemesi
-│   ├── 05_training_multimodal.ipynb  # Multimodal model eğitimi (ana eğitim)
-│   ├── 06_evaluation.ipynb           # Model değerlendirme, MAE, grafikler
-│   ├── 07_gradcam.ipynb              # GradCAM ısı haritası görselleştirme
-│   └── 08_gradio_app.ipynb           # Gradio interaktif arayüz
-├── outputs/
-│   ├── plots/                        # EDA ve değerlendirme grafikleri
-│   └── gradcam/                      # GradCAM çıktı görselleri
-├── requirements.txt
-└── README.md
+
+| Dosya | Açıklama |
+|-------|----------|
+| `notebooks/01_setup.ipynb` | Ortam kurulumu, Kaggle API, Drive bağlantısı |
+| `notebooks/02_eda.ipynb` | Veri keşfi, dağılım grafikleri |
+| `notebooks/03_preprocessing.ipynb` | Görüntü işleme, sentetik klinik veri üretimi |
+| `notebooks/04_model.ipynb` | İlk model denemesi (tek girdi) |
+| `notebooks/05_training_multimodal.ipynb` | Multimodal model eğitimi — ana eğitim dosyası |
+| `notebooks/06_evaluation.ipynb` | Model değerlendirme, MAE hesaplama, grafikler |
+| `notebooks/07_gradcam.ipynb` | GradCAM ısı haritası görselleştirme |
+| `notebooks/08_gradio_app.ipynb` | Gradio interaktif arayüz |
+| `outputs/plots/` | EDA ve değerlendirme grafikleri |
+| `outputs/gradcam/` | GradCAM çıktı görselleri |
+| `requirements.txt` | Gerekli kütüphaneler |
 
 ---
 
